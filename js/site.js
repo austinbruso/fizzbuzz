@@ -11,7 +11,7 @@ function getValues() {
     // check that the numbers are integers
     if(Number.isInteger(fizzValue) && Number.isInteger(buzzValue)) {
         // Call fizzy
-        let fbArray = fizzBuzz(fizzValue, buzzValue);
+        let fbArray = fizzBuzzB(fizzValue, buzzValue);
         // Call display
         displayData(fbArray);
     } else {
@@ -19,16 +19,16 @@ function getValues() {
     }
 }
 
-function fizzBuzz(fizzValue, buzzValue) {
+function fizzBuzz(fValue, bValue) {
     let returnArray = [];
 
     // Loop from 1 to 100
     for (let i = 1; i <= 100; i++) {
-         if (i % fizzValue == 0 && i % buzzValue == 0) {
+         if (i % fValue == 0 && i % bValue == 0) {
              returnArray.push("Fizz Buzz");
-         } else if (i % fizzValue == 0){
+         } else if (i % fValue == 0){
             returnArray.push("Fizz");
-         } else if (i % buzzValue == 0){
+         } else if (i % bValue == 0){
             returnArray.push("Buzz");
          } else {
             returnArray.push(i);
@@ -39,7 +39,7 @@ function fizzBuzz(fizzValue, buzzValue) {
 }
 
 
-function fizzBuzzB(fizzValue, BuzzValue) {
+function fizzBuzzB(fizzValue, buzzValue) {
     let returnArray = [];
     let Fizz = false;
     let Buzz = false;
