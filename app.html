@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>Inverse: A Coding Project by Austin Bruso.</title>
+    <title>FizzBuzz: A Coding Project by Austin Bruso.</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -57,25 +57,28 @@
         <div class="container mt-5 pt-3">
             <div class="row row-cols-1 rol-cols-lg-2">
                 <div class="col-lg-4 col border-end border-2">
-                    <h1 class="display-4 fw-bold">Inverse: Your Message in Reverse.  </h1>
+                    <h1 class="display-4 fw-bold">FizzBuzz.  </h1>
                     <h4  class="lead">
-                        A coding exercise that inverts text. 
+                        <p>When it counts you Fizz Buzz. A Javascript coding exercise using loops. Write a program that prints the numbers from 1 to 100 and for multiples of '3' display "Fizz" instead of the number and for the multiples of '5' display "Buzz". If a multiple of both display "FizzBuzz".</p>
+ 
                     </h4>
                     <h2 class="mt-5 border-bottom border-2">Instructions</h2>
-                    <p>Enter a starting value and a ending value. Press the button and the values will appear. Display even numbers in Bold.</p>
+                    <p>Enter a fizz and a buzz value. Press the button and the values will appear.</p>
                 </div>
                 <div class="col-lg-8 col">
                     <div>
-                        <h5>Enter Values</h5>
-                        <form class="row gy-2 gx-3">
-                             <div class="col">
-                                <input type="number" id="startValue" class="form-control" placeholder="Start Value" value="0" aria-label="Start Value">
+                        <form class="row gy-2 gx-3 ">
+                             <div class="col col-lg-6">
+                                <h3>Enter a Fizz Number</h3>
+                                <input type="number" id="fizzValue" class="form-control"  value=3 aria-label="Start Value">
                              </div>
-                             <div class="col">
-                                <input type="number" id="endValue" class="form-control" placeholder="End Value" value="100" aria-label="End Value">
+                             
+                             <div class="col col-lg-6">
+                                <h3>Enter a Buzz Number</h3>
+                                <input type="number" id="buzzValue" class="form-control" value=5 aria-label="End Value">
                              </div>
                              <div class="col-12 d-flex justify-content-end">
-                                 <button id="btnSubmit" type="button" class="btn btn-dark btn-lg">Zero to 100</button>
+                                 <button id="btnSubmit" type="button" class="btn btn-dark btn-lg">Submit</button>
                              </div>
                         </form>
                         <h2 class="border-bottom border-2 ">Results</h2>
@@ -83,6 +86,7 @@
                             <table class="table table-striped table-sm">
                                 <tbody id="results">
                                     <!-- Results Go Here -->
+                                    
                                 </tbody>
                             </table>
                         </div>
@@ -101,7 +105,7 @@
                 <div class="col d-flex justify-content-center">
                     
                     <img style="
-                    margin: -150px";  src="img/Austin Bruso (1).svg" alt="" height="400">
+                    margin: -150px";  src="img/Austin Bruso (1).svg" alt="logo" height="400">
             
                 </div>
                 <div class="col d-flex justify-content-center justify-content-lg-end ">
@@ -115,6 +119,17 @@
         </div>
     </footer>
 <!-- Footer -->
+
+<template id="fbTemplate">
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</template>
+
  <!-- Bootstrap JS -->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
  integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
